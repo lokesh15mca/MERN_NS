@@ -1,0 +1,11 @@
+.link{
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    gap: 2px;
+    justify-content: center;
+    margin-left: 20px;
+    padding-top: 20px;
+}
+.link1{
+    margin-left: 20px;
+}
