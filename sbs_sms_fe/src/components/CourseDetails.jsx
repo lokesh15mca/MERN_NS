@@ -36,7 +36,7 @@ export const CourseDetails = () => {
                 <div className="CourseDetail-wrapper">
                     <img src={arr[id].img} alt="Image not available" className="CourseDetail-img" />
                     <div className="coursedetail-text">
-                        <h1>{arr[id].name}</h1>
+                        <h5>{arr[id].name}</h5>
                         <p>Price :- {arr[id].price}</p>
                         <p>Starting Date :- {arr[id].sDate}</p>
                     </div>
@@ -47,7 +47,7 @@ export const CourseDetails = () => {
                         </div>
                         <div>
                             <p>Course Details</p>
-                            <p>Course descriptio</p>
+                            <p>Course description</p>
                         </div>
                     </div>
                 </div>

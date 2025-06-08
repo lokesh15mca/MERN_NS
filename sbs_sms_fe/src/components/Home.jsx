@@ -1,5 +1,5 @@
 export const Home =()=>{
     return <>
-    Home
+    Working on Home page...
     </>
 }

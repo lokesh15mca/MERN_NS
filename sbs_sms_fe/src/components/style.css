@@ -40,7 +40,7 @@
     padding: 10px;
   }
   .signup-form {
-    height: 80vh;
+    height: 70vh;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -307,6 +307,7 @@
     height: 70px;
 } */
 .course-dec-box{
+    /* margin-top: 100px; */
     width: 30%;
  } 
  .course-dec-container{
@@ -339,7 +340,7 @@ tr:hover{
 }
 .students-container{
     height: 80vh;
-    width: 30%;
+    width: 100%;
     overflow-y: auto;
 }
 .coursedetail-text{

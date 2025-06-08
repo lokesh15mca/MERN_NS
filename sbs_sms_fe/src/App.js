@@ -9,8 +9,8 @@ import { AllCourse } from './components/AllCourse';
 import { AddCourse } from './components/AddCourse';
 import { AddStudents } from './components/AddStudents';
 import { AllStudents } from './components/AllStudents';
-import { Collectfee } from './components/Collectfee';
-import { Paymenthistory } from './components/Paymenthistory';
+// import { Collectfee } from './components/Collectfee';
+// import { Paymenthistory } from './components/Paymenthistory';
 import { CourseDetails } from './components/CourseDetails';
 
 
@@ -43,8 +43,8 @@ export const myRouter = createBrowserRouter([
       { path: "addCourse", Component: AddCourse },
       { path: "addStudent", Component: AddStudents },
       { path: "allStudent", Component: AllStudents },
-      { path: "fee", Component: Collectfee },
-      { path: "paymentHistory", Component: Paymenthistory },
+      // { path: "fee", Component: Collectfee },
+      // { path: "paymentHistory", Component: Paymenthistory },
       { path: "courseDetails/:id", Component: CourseDetails },
       { path: "update-course/:id", Component: AddCourse },
     ] 

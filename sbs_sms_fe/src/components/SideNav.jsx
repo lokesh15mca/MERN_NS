@@ -14,9 +14,9 @@ export const SideNav = ()=>{
             <Link to="/dashboard/allCourses" className={location.pathname === '/dashboard/allCourses' ? 'menu-active-link':'menu-link '}><i class="fa-solid fa-book"></i> All Course</Link>
             <Link to="/dashboard/addCourse" className={location.pathname === '/dashboard/addCourse' ? 'menu-active-link':'menu-link '}><i class="fa-solid fa-plus"></i> Add Course</Link>
             <Link to="/dashboard/allStudent" className={location.pathname === '/dashboard/allStudent' ? 'menu-active-link':'menu-link '}><i class="fa-solid fa-user-group"></i> All Students</Link>
-            <Link to="/dashboard/addStudent" className={location.pathname === '/dashboard/addStudent' ? 'menu-active-link':'menu-link '}> <i class="fa-solid fa-book"></i> Add Students</Link>
-            <Link to="/dashboard/fee" className={location.pathname === '/dashboard/fee' ? 'menu-active-link':'menu-link '}> <i class="fa-solid fa-money-bill"></i> Collect fee</Link>
-            <Link to="/dashboard/paymentHistory" className={location.pathname === '/dashboard/paymentHistory' ? 'menu-active-link':'menu-link '}> <i class="fa-solid fa-list"></i> Payment history</Link>
+            <Link to="/dashboard/addStudent" className={location.pathname === '/dashboard/addStudent' ? 'menu-active-link':'menu-link '}> <i class="fa-solid fa-book"></i>Add Student</Link>
+            {/* <Link to="/dashboard/fee" className={location.pathname === '/dashboard/fee' ? 'menu-active-link':'menu-link '}> <i class="fa-solid fa-money-bill"></i> Collect fee</Link>
+            <Link to="/dashboard/paymentHistory" className={location.pathname === '/dashboard/paymentHistory' ? 'menu-active-link':'menu-link '}> <i class="fa-solid fa-list"></i> Payment history</Link> */}
         </div>
         <div className='contact-us'>
             <p> <i class="fa-solid fa-address-book"></i> Contact Me</p>

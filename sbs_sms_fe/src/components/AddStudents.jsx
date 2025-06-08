@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom"
-import { ToastContainer, toast } from 'react-toastify';
+// import { ToastContainer, toast } from 'react-toastify';
 export const AddStudents =()=>{
     const navigate = useNavigate();
     const handleSubmit = ()=>{
@@ -12,8 +12,8 @@ export const AddStudents =()=>{
             <h1>Add New Student</h1>
             <input type="text"  placeholder="Student Name"/>
             <input type="text"  placeholder="Phone Number"/>
-            <input type="text"  placeholder="Email"/>
-            <input type="text"  placeholder="Address"/>
+            {/* <input type="text"  placeholder="Email"/> */}
+            {/* <input type="text"  placeholder="Address"/> */}
             <input type="text"  placeholder="Joining date (DD-MM-YY)"/>
             <input type="text"  placeholder="Father Name"/>
            

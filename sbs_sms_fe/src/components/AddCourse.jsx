@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom"
-import { ToastContainer, toast } from 'react-toastify';
+// import { ToastContainer, toast } from 'react-toastify';
 export const AddCourse =()=>{
     const location = useLocation()
     const [courseName, setCourseName] = useState("");
@@ -9,25 +9,7 @@ export const AddCourse =()=>{
     const [price, setCourseprice] = useState("");
     const [sDate, setCoursesDate] = useState("");
     const [EDate, setCourseEDate] = useState("");
-    useEffect(()=>{
-        if(location.state){
-            console.log(location.state.id);
-            setCourseName(arr[location.state.id].name)
-            setCourseImg(arr[location.state.id].img)
-            setCoursedec("This is decription");
-            setCourseprice(arr[location.state.id].price);
-            setCoursesDate(arr[location.state.id].sDate);
-            setCourseEDate("01-03-2026");
-        }   
-        else{
-            setCourseName("")
-            setCourseImg("")
-            setCoursedec("");
-            setCourseprice("");
-            setCoursesDate("");
-            setCourseEDate("");
-        }     
-    },[location])
+    
     var arr = [
         {
             img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrDlzMEQocMDFE59THvGh0JtEzxbBerfn7aw&s",
@@ -50,6 +32,26 @@ export const AddCourse =()=>{
             price: "Rs. 8000/- only",
             sDate: "01-03-2025"
         }]
+
+        useEffect(()=>{
+        if(location.state){
+            console.log(location.state.id);
+            setCourseName(arr[location.state.id].name)
+            setCourseImg(arr[location.state.id].img)
+            setCoursedec("This is decription");
+            setCourseprice(arr[location.state.id].price);
+            setCoursesDate(arr[location.state.id].sDate);
+            setCourseEDate("01-03-2026");
+        }   
+        else{
+            setCourseName("")
+            setCourseImg("")
+            setCoursedec("");
+            setCourseprice("");
+            setCoursesDate("");
+            setCourseEDate("");
+        }     
+    },[location])
     const navigate = useNavigate();
     const handleSubmit = ()=>{
         // toast("Wow so easy!");
